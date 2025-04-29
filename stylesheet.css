@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #e4d6cb;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+header{
+    display:flex;
+    top:0;
+    width: 100%;
+    background-color:#e4d6cb;
+    justify-content: space-between;
+    position: fixed;
+    color: rgb(0, 0, 0);
+    padding: 0px 30px;
+    align-items: center;
+}
+
+nav a{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+nav a:hover {
+    background-color: white;
+    color: rgb(138, 42, 42);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    gap: 10px;
+}
+
+.left-panel {
+    background-color: #6d1b1b;
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    z-index: 1;
+    font-size: 30vw;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    text-align: center;
+    
+}
+
+.left-content {
+    display: relative;
+    z-index: 2;
+    
+    
+}
+
+.kvass-image {
+    width: 600px; 
+    height: 1000px;
+    margin-top: 40px;
+    transform: rotate(35deg);
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.kvass-image:hover{
+    transform: scale(1.0) rotate(50deg);
+}
+
+.brand-text {
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    z-index: 2;
+    line-height: 1.2;
+}
+
+.kvass{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.good{
+    display :inline-block;
+    margin-right: 20px;
+
+}
+
+
+
+.hero-text{
+    margin-left: auto;
+    max-width: 500px;
+    color:rgb(87, 34, 34);
+    text-align: left;
+    margin-top: 300px;
+    margin-left: 800px
+}
+
+.hero-text h1{
+    font-size: 36px;
+    margin-bottom: 15px;
+    
+}
+
+.hero-text p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.order-button{
+    display: inline-block;
+    margin-left: 170px;
+    background-color: blanchedalmond;
+    color:#6d1b1b;
+    padding:12px 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3 ease;
+    box-shadow: 0px 0px 3px black;
+    margin-top: 10px;
+}
+
+.order-button:hover{
+    background-color: rgb(215, 197, 170);
+    color: rgb(138, 42, 42);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.about{
+    padding-top: 100px; 
+    padding-left: 100px; 
+    padding-right: 100px;
+    min-height: 100vh;
+    background-color: #e4d6cb;
+    color: #5a2f2f;
+    display: flex;
+    align-items: center;
+}
+
+.about-text h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-left: 800px;
+}
+
+.about-text p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    padding-left: 800px;
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.right-panel{
+    background-color: #6d1b1b;
+    width: 30%;
+    height: 200vh;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 0;
+    margin-top: 100vh;
+}
+
+.kvass-gelas {
+    width: 600px; 
+    height: 130vh;
+    position: absolute;
+    transform: rotate(20deg);
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease;
+    margin-top: 80vh;
+    
+}
+
+.kvass-gelas:hover{
+    transform: scale(1.0) rotate(40deg);
+}
+
+
+
+
+
+
+
+   
