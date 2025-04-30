@@ -2,6 +2,9 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 html, body{
     overflow-x: hidden;
 }
@@ -27,6 +30,7 @@ nav a{
     padding: 10px 25px;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    z-index: 2;
 
 }
 
@@ -35,6 +39,7 @@ nav a:hover {
     color: rgb(138, 42, 42);
     border-radius: 5px;
     transition: 0.3s;
+    z-index: 2;
 }
 
 .logo{
@@ -43,12 +48,16 @@ nav a:hover {
     padding-left: 20px;
 }
 
+.home{
+    color: transparent
+}
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
     gap: 10px;
+    z-index: 2;
 }
 
 .left-panel {
@@ -58,7 +67,7 @@ nav a:hover {
     position: absolute;
     top: 0;
     left: 200px;
-    z-index: 1;
+    z-index: 3;
     font-size: 30vw;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
@@ -71,7 +80,7 @@ nav a:hover {
 
 .left-content {
     display: relative;
-    z-index: 2;
+    z-index: 5;
     
     
 }
@@ -83,10 +92,12 @@ nav a:hover {
     transform: rotate(35deg);
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease;
+    z-index: 5;
 }
 
 .kvass-image:hover{
     transform: scale(1.0) rotate(50deg);
+    z-index: 5;
 }
 
 .brand-text {
@@ -156,7 +167,8 @@ nav a:hover {
 }
 
 .about{
-    padding-top: 100px; 
+    padding-top: 20px; 
+    padding-bottom: 100px;
     padding-left: 100px; 
     padding-right: 100px;
     min-height: 100vh;
@@ -190,7 +202,7 @@ nav a:hover {
     position: absolute;
     top: 0;
     left:0;
-    z-index: 0;
+    z-index: 1;
     margin-top: 100vh;
 }
 
@@ -202,6 +214,7 @@ nav a:hover {
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease;
     margin-top: 80vh;
+    z-index: 1;
     
 }
 
@@ -209,6 +222,140 @@ nav a:hover {
     transform: scale(1.0) rotate(40deg);
 }
 
+
+.product .container{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    justify-items: center;
+}
+
+.card{
+    background-color: rgb(249, 247, 247);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #5a2f2f;
+    width: 200px;
+    justify-content: center;
+
+}
+
+.card img{
+    width:150px;
+    height: auto;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.card a{
+    display: inline-block;
+    margin-top: 10px;
+    color: #5a2f2f;
+    padding: 5px 20px;
+    text-decoration: none;
+    box-shadow: 0px 0px 3px;
+    border-radius: 20px;
+    background: #ecdccf;
+}
+
+.card a:hover{
+    background-color: rgb(215, 197, 170);
+    color: rgb(138, 42, 42);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.judul{
+    text-align: center;
+    font-size: 120px;
+    padding-top: 100px;
+    color: #5a2f2f;
+}
+    
+.straight-panel{
+    background-color: #6d1b1b;
+    width: 300vw;
+    height: 50vh;
+    margin-top: 735px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    z-index: 1; 
+    justify-content: center;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.kvass-cheer{
+    width: 600px; 
+    height:600px;
+    margin-bottom: 300px;
+    padding-right: 2400px;
+    transform: rotate(5deg);
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease;
+    z-index: 5;
+}
+
+.kvass-cheer:hover{
+    transform: scale(1.0) rotate(8deg);
+    z-index: 5;
+}
+
+.straight2-panel{
+    background-color: #6d1b1b;
+    width: 500vh;
+    height: 20vh;
+    margin-top: 280vh;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    padding-left: 100px; 
+    padding-right: 100px;
+    min-height: 20vh;
+    background-color: #5a2f2f;
+    color: #f6ebe4;
+    display: flex;
+    align-items: center;
+}
+
+.footer{
+    background-color: #5a2f2f;
+    height: 10vh;
+}
+
+footer .socials{
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+footer .socials a{
+    color:white;
+    font-size: 30px;
+    padding: 5px 20px;
+}
+
+footer .socials a:hover{
+    background-color: rgb(215, 197, 170);
+    color: rgb(138, 42, 42);
+    border-radius: 15px;
+    transition: 0.3s;
+}
 
 
 
