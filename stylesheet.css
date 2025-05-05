@@ -6,7 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 html, body{
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
 
 body{
@@ -81,8 +81,6 @@ nav a:hover {
 .left-content {
     display: relative;
     z-index: 5;
-    
-    
 }
 
 .kvass-image {
@@ -123,9 +121,7 @@ nav a:hover {
 
 }
 
-
-
-.hero-text{
+.main-text{
     margin-left: auto;
     max-width: 500px;
     color:rgb(87, 34, 34);
@@ -134,13 +130,13 @@ nav a:hover {
     margin-left: 800px
 }
 
-.hero-text h1{
+.main-text h1{
     font-size: 36px;
     margin-bottom: 15px;
     
 }
 
-.hero-text p{
+.main-text p{
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 25px;
@@ -244,9 +240,28 @@ nav a:hover {
     color: #5a2f2f;
     width: 200px;
     justify-content: center;
-
 }
 
+.card {
+    transition: transform 0.3s ease;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card:hover {
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
 .card img{
     width:150px;
     height: auto;
@@ -322,26 +337,35 @@ nav a:hover {
 }
 
 .contact{
-    padding-top: 10px; 
-    padding-bottom: 10px;
-    padding-left: 100px; 
-    padding-right: 100px;
-    min-height: 20vh;
+    height: 100vh;
     background-color: #5a2f2f;
     color: #f6ebe4;
     display: flex;
     align-items: center;
 }
 
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    font-size: x-large;
+}
+
+
 .footer{
-    background-color: #5a2f2f;
-    height: 10vh;
+    background-color:#f6ebe4;
+    height: 20px;
 }
 
 footer .socials{
     text-align: center;
     align-items: center;
     padding-top: 10px;
+    height: 20px;
 }
 
 footer .socials a{
