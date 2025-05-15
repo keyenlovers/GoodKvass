@@ -27,11 +27,10 @@ header{
 }
 
 nav a{
-    padding: 10px 25px;
     text-decoration: none;
+    padding: 10px 25px;
     color: rgb(0, 0, 0);
     z-index: 2;
-
 }
 
 nav a:hover {
@@ -41,17 +40,8 @@ nav a:hover {
     transition: 0.3s;
     z-index: 2;
 }
-
-.logo{
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 20px;
-}
-
-.home{
-    color: transparent
-}
 .navbar{
+    margin-left: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +50,7 @@ nav a:hover {
     z-index: 2;
 }
 
-.left-panel {
+.left-panel{
     background-color: #6d1b1b;
     width: 30%;
     height: 100vh;
@@ -75,15 +65,13 @@ nav a:hover {
     justify-content: center;
     color: whitesmoke;
     text-align: center;
-    
 }
 
-.left-content {
-    display: relative;
+.left-content{
     z-index: 5;
 }
 
-.kvass-image {
+.kvass-image{
     width: 600px; 
     height: 1000px;
     margin-top: 40px;
@@ -98,7 +86,7 @@ nav a:hover {
     z-index: 5;
 }
 
-.brand-text {
+.brand-text{
     position: absolute;
     top: 150px;
     left: 30px;
@@ -118,7 +106,6 @@ nav a:hover {
 .good{
     display :inline-block;
     margin-right: 20px;
-
 }
 
 .main-text{
@@ -163,7 +150,7 @@ nav a:hover {
 }
 
 .about{
-    padding-top: 20px; 
+    padding-top: 10px; 
     padding-bottom: 100px;
     padding-left: 100px; 
     padding-right: 100px;
@@ -187,10 +174,6 @@ nav a:hover {
     padding-left: 800px;
 }
 
-.horizontal-scroll-wrapper::-webkit-scrollbar{
-    display: none;
-}
-
 .right-panel{
     background-color: #6d1b1b;
     width: 30%;
@@ -202,7 +185,7 @@ nav a:hover {
     margin-top: 100vh;
 }
 
-.kvass-gelas {
+.kvass-gelas{
     width: 600px; 
     height: 130vh;
     position: absolute;
@@ -242,7 +225,7 @@ nav a:hover {
     justify-content: center;
 }
 
-.card {
+.card{
     transition: transform 0.3s ease;
     background-color: white;
     padding: 20px;
@@ -251,11 +234,11 @@ nav a:hover {
     text-align: center;
 }
 
-.card:hover {
+.card:hover{
     animation: shake 0.5s ease;
 }
 
-@keyframes shake {
+@keyframes shake{
     0% { transform: translateX(0); }
     25% { transform: translateX(-5px); }
     50% { transform: translateX(5px); }
